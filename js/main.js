@@ -1,3 +1,5 @@
 $(document).ready(function(){
-    // jquery in here
+    $('.toggle-box .toggles').click(function(){
+        $(this).siblings('.is-toggled').slideToggle();
+    });
 });

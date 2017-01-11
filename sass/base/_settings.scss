@@ -20,22 +20,22 @@ $link-line-hover: no;
 
 // if set to yes, each paragraph following after another,
 // will have a margin-top
-$paragraph-gap: yes;
+$paragraph-gap: no;
 
 // if set to yes, settings for a container class will be added
-$container-settings: yes;
+$container-settings: no;
 
 // if set to yes, some more minimal defaults for tags will be restored (as in: cite, input, textarea etc.)
-$extended-defaults: yes;
+$extended-defaults: no;
 
 // if set to yes blockquotes will be styled with a border on the left, padding and margin
-$include-blockquote-style: yes;
+$include-blockquote-style: no;
 
 // if set to yes tables will be styled according to settings
-$include-table-style: yes;
+$include-table-style: no;
 
 // if set to yes, defintion lists will be styled
-$include-definition-list-style: yes;
+$include-definition-list-style: no;
 
 // if set to yes, WordPress default classes will be added
 $inlcude-WordPress-kit: no;
@@ -43,33 +43,33 @@ $inlcude-WordPress-kit: no;
 // color variables (use colors as values)
 //----------------------------------------
 
-$main-color: $black;
+$main-color: #0F2B48;
 $link-color: $teal;
 $link-hover-color: $blood;
 
 // String Variables (use strings as values | for Font Variables: Don't forget to include the fonts)
 //------------------------------------------
 
-$main-font: 'Roboto', 'Calibri', 'Arial', sans-serif;
+$main-font: 'Work Sans', 'Calibri', sans-serif;
 
 // set to $main-font if you don't want your headings to use another font
 $headings-font: $main-font;
 
 // use values from text-transform [none|capitalize|uppercase|lowercase|initial|inherit]
-$headings-text-transform: none;
+$headings-text-transform: uppercase;
 
 $code-font: 'Source Code Pro', Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
 
 // size variables (use numbers as values (units as indicated ))
 
 // font-weights, alternatively use: [light, normal, bold]
-$main-font-weight: 300;
+$main-font-weight: 400;
 
 // set $main-font-weight if you don't want your headings to use another font-weight
-$headings-font-weight: 700;
+$headings-font-weight: 600;
 
 // use px here
-$root-font-size: 19px;
+$root-font-size: 30px;
 
 // do not add a unit here
 $basic-line-height: 1.6;
