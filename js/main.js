@@ -1,7 +1,6 @@
 var fish = $('svg g[id="fish"]'),
     teil = $('svg g[id="Teilchen"]'),
-    primary = $('svg text[class="primary"]'),
-    secondary = $('svg text[class="secondary"]');
+    text = $('svg g[id="text"]');
 
 $(document).ready(function(){
     $('.toggle-box .toggles').click(function(){
@@ -9,20 +8,17 @@ $(document).ready(function(){
     });
     teil.click(function(){
         $(this).addClass('grow had-grow');
-        primary.addClass('visible');
-        secondary.addClass('visible');
+        text.addClass('visible');
     });
 });
 $(document).scroll(function(){
     if ( fish.isOnScreen(0.5, 0.5) ){
         teil.removeClass('grow');
-        primary.removeClass('visible');
-        secondary.removeClass('visible');
+        text.removeClass('visible');
     } else {
         if(teil.hasClass('had-grow')){
             teil.addClass('grow');
-            primary.addClass('visible');
-            secondary.addClass('visible');
+            text.addClass('visible');
         }
     }
 });

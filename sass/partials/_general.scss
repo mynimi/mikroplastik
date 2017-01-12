@@ -95,19 +95,16 @@ body{
     right: 20px;
     z-index: 9999;
 }
-
-.primary,
-.secondary{
+#text {
     transform: scale(0.1);
-    opacity: 0;
-    transform-origin: 1200px 1545px;
+    transform-origin: 30% 30% 0;
     font-size: 35px;
     fill: white;
     transition: .8s all ease;
     cursor: pointer;
 
     &.visible{
-        opacity: 1;
         transform: scale(1);
+        transform-origin: 30% 30% 0;
     }
 }
