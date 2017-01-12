@@ -64,11 +64,48 @@ body{
 }
 
 #pulse{
-    transform-origin: 740px 1150px;
+    transform-origin: 740px 1590px;
     animation: pulse .8s infinite;
 }
 
 #pulse_1_{
-    transform-origin: 900px 2000px;
+    transform-origin: 1200px 2600px;
     animation: pulse .8s infinite;
+}
+
+// Mikroplastik grow
+#Teilchen{
+    transform-origin: 740px 1145px;
+    transform-origin: 740px 1590px;
+    transform: scale(1);
+    transition: .8s all ease;
+
+    &.grow{
+        transform: scale(13);
+    }
+}
+.cover{
+    fill: white;
+    fill: none;
+}
+
+.close{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+}
+
+.primary,
+.secondary{
+    font-size: 35px;
+    fill: white;
+    transform: scale(0);
+    transition: .8s all ease;
+    cursor: pointer;
+    transform-origin: 1200px 1545px;
+
+    &.visible{
+        transform: scale(1);
+    }
 }
