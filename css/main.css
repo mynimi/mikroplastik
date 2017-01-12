@@ -1540,7 +1540,7 @@ body { text-align: center; color: #0F2B48; }
 
 .primary.visible, .secondary.visible { -webkit-transform: scale(1); -ms-transform: scale(1); transform: scale(1); }
 
-.st0 { opacity: 0.91; fill: url("../#SVGID_1_"); }
+.st0 { opacity: 0.91; }
 
 .st1 { fill: #FFFFFF; }
 
