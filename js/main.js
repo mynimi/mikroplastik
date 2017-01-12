@@ -6,9 +6,11 @@ $(document).ready(function(){
     $('.toggler').click(function(){
         var id = $(this).attr('data-toggles-overlay');
         $('#'+id).toggleClass('open');
+        $('body').css('overflow-y', 'hidden');
     });
     $('.overlay .close').click(function(){
         $(this).parent().removeClass('open');
+        $('body').css('overflow-y', 'auto');
     });
     $('.toggle-box .toggles').click(function(){
         $(this).siblings('.is-toggled').slideToggle();
@@ -19,7 +21,7 @@ $(document).ready(function(){
     });
 });
 $(document).scroll(function(){
-    if ( fish.isOnScreen(0.5, 0.5) ){
+    if ( fish.isOnScreen(0.15, 0.15) ){
         teil.removeClass('grow');
         text.removeClass('visible');
     } else {
