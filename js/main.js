@@ -1,5 +1,6 @@
 var fish = $('svg g[id="fish"]'),
     teil = $('svg g[id="Teilchen"]'),
+    fishToggle = $('svg g[id="fish-toggle"]'),
     text = $('svg g[id="text"]');
 
 $(document).ready(function(){
