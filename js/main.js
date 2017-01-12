@@ -3,6 +3,13 @@ var fish = $('svg g[id="fish"]'),
     text = $('svg g[id="text"]');
 
 $(document).ready(function(){
+    $('.toggler').click(function(){
+        var id = $(this).attr('data-toggles-overlay');
+        $('#'+id).toggleClass('open');
+    });
+    $('.overlay .close').click(function(){
+        $(this).parent().removeClass('open');
+    });
     $('.toggle-box .toggles').click(function(){
         $(this).siblings('.is-toggled').slideToggle();
     });

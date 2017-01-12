@@ -108,3 +108,19 @@ body{
         transform-origin: 30% 30% 0;
     }
 }
+
+.overlay{
+    display: none;
+    width: 80%;
+    max-height: 80%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: fixed;
+    z-index: 100;
+    background: rgba(white, .7);
+    &.open{
+        display: block;
+    }
+}

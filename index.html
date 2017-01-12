@@ -378,8 +378,8 @@
                 		<path class="st5" d="M777.6,1609.2c9.7-4.8,16-12.8,16-21.7s-6.3-16.9-16-21.7"/>
                 	</g>
                     <g id ="text">
-                        <text class="secondary" x="1100" y="1480" font-size="35" font-family="Work Sans">Primäres Mikroplastik [...]</text>
-                        <text class="primary" x="1100" y="1600" font-size="35" font-family="Work Sans">Sekundäres Mikroplastik [...]</text>
+                        <text class="secondary toggler" data-toggles-overlay="secondary" x="1100" y="1480" font-size="35" font-family="Work Sans">Primäres Mikroplastik [...]</text>
+                        <text class="primary toggler" data-toggles-overlay="primary" x="1100" y="1600" font-size="35" font-family="Work Sans">Sekundäres Mikroplastik [...]</text>
                     </g>
                     <g id="Teilchen">
                 		<polygon class="st3" points="733.9,1585.7 739.6,1578.2 750.7,1586.6 		"/>
@@ -402,15 +402,15 @@
             <div class="fazit text">Fazit</div>
         </div>
     </div>
-    <div class="overlay-teilchen hidden">
-        <div class="toggle-box">
-            <p class="toggles">Primäres Mikroplastik</p>
-            <p class="is-toggled">Bla bla bla</p>
-        </div>
-        <div class="toggle-box">
-            <p class="toggles">Sekundäres Mikroplastik</p>
-            <p class="is-toggled">Bla Bla Bla</p>
-        </div>
+    <div id="primary" class="toggle-box overlay">
+        <p class="toggles">Primäres Mikroplastik</p>
+        <p class="is-toggled">Bla bla bla</p>
+        <span class="close"><i class="fa fa-times"></i></span>
+    </div>
+    <div id="secondary" class="toggle-box overlay">
+        <p class="toggles">Sekundäres Mikroplastik</p>
+        <p class="is-toggled">Bla Bla Bla</p>
+        <span class="close"><i class="fa fa-times"></i></span>
     </div>
     <div class="plate-overlay hidden">
         <div class="info">Noch mal Info zu Fisch</div>
