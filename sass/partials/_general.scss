@@ -98,14 +98,16 @@ body{
 
 .primary,
 .secondary{
+    transform: scale(0.1);
+    opacity: 0;
+    transform-origin: 1200px 1545px;
     font-size: 35px;
     fill: white;
-    transform: scale(0);
     transition: .8s all ease;
     cursor: pointer;
-    transform-origin: 1200px 1545px;
 
     &.visible{
+        opacity: 1;
         transform: scale(1);
     }
 }

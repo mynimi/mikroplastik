@@ -1536,9 +1536,9 @@ body { text-align: center; color: #0F2B48; }
 
 .close { position: fixed; top: 20px; right: 20px; z-index: 9999; }
 
-.primary, .secondary { font-size: 35px; fill: white; -webkit-transform: scale(0); -ms-transform: scale(0); transform: scale(0); transition: .8s all ease; cursor: pointer; -webkit-transform-origin: 1200px 1545px; -ms-transform-origin: 1200px 1545px; transform-origin: 1200px 1545px; }
+.primary, .secondary { -webkit-transform: scale(0.1); -ms-transform: scale(0.1); transform: scale(0.1); opacity: 0; -webkit-transform-origin: 1200px 1545px; -ms-transform-origin: 1200px 1545px; transform-origin: 1200px 1545px; font-size: 35px; fill: white; transition: .8s all ease; cursor: pointer; }
 
-.primary.visible, .secondary.visible { -webkit-transform: scale(1); -ms-transform: scale(1); transform: scale(1); }
+.primary.visible, .secondary.visible { opacity: 1; -webkit-transform: scale(1); -ms-transform: scale(1); transform: scale(1); }
 
 .st0 { opacity: 0.91; }
 
