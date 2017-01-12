@@ -27,73 +27,6 @@ body{
     cursor: pointer;
 }
 
-.water-scrollable{
-    position: relative;
-    line-height: 0;
-    width: 100%;
-    svg{
-        width: 100%;
-        height: 100%;
-    }
-    .meer-info{
-        position: absolute;
-        top: 17%;
-        left: 50%;
-        transform: translateX(-50%);
-        // background: rgba(white, .8);
-        padding: 10px;
-        color: white;
-        line-height: $basic-line-height;
-    }
-    .fazit{
-        position: absolute;
-        bottom: 3%;
-        left: 50%;
-        transform: translateX(-50%);
-        color: white;
-    }
-}
-
-@keyframes pulse {
-    0%   {
-        opacity: 1;
-    }
-    50% {
-        opacity: .3;
-    }
-    100% {
-        opacity: .9;
-    }
-}
-
-#pulse{
-    animation: pulse 1.5s infinite;
-}
-
-#pulse_1_{
-    animation: pulse 1.5s infinite;
-}
-
-#pulse_2{
-    animation: pulse 1.5s infinite;
-}
-
-// Mikroplastik grow
-#Teilchen{
-    transform-origin: 740px 1145px;
-    transform-origin: 740px 1590px;
-    transform: scale(1);
-    transition: .8s all ease;
-
-    &.grow{
-        transform: scale(13);
-    }
-}
-.cover{
-    fill: white;
-    fill: none;
-}
-
 .close{
     position: fixed;
     top: 20px;
@@ -105,16 +38,13 @@ body{
     cursor: pointer;
 }
 
-#text {
-    transform: scale(0);
-    transform-origin: 30% 30% 0;
-    font-size: 35px;
-    fill: white;
-    transition: .8s all ease;
-
-    &.visible{
-        transform: scale(1);
-        transform-origin: 30% 30% 0;
+.water-scrollable{
+    position: relative;
+    line-height: 0;
+    width: 100%;
+    svg{
+        width: 100%;
+        height: 100%;
     }
 }
 

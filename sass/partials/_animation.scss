@@ -1,0 +1,64 @@
+@keyframes waves {
+    0%   {
+        transform: translateX(-20px)
+    }
+    50% {
+        transform: translateX(20px);
+    }
+    100% {
+        transform: translateX(-20px);
+    }
+}
+
+@keyframes pulse {
+    0%   {
+        opacity: 1;
+    }
+    50% {
+        opacity: .3;
+    }
+    100% {
+        opacity: .9;
+    }
+}
+
+#pulse,
+#pulse_1_,
+#pulse_2{
+    animation: pulse 1.5s infinite;
+}
+
+
+#gradient,
+#MP{
+    animation: waves 1.5s infinite;
+}
+
+#neues_MP{
+    animation: waves 1.5s infinite;
+    animation-direction: reverse;
+}
+
+
+// Mikroplastik grow
+#Teilchen{
+    transform: scale(1);
+    transition: .8s all ease;
+    transform-origin: 751px 1971px;
+
+    &.grow{
+        transform: scale(13);
+    }
+}
+
+#text {
+    transform: scale(0);
+    transform-origin: 1090px 1971px;
+    font-size: 35px;
+    fill: white;
+    transition: .8s all ease;
+
+    &.visible{
+        transform: scale(1);
+    }
+}
