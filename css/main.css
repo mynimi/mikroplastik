@@ -1476,7 +1476,7 @@ h1, h2, h3, h4, h5, h6 { line-height: 1; padding: 10px 0px; text-transform: uppe
 
 h1 { font-size: 2.35em; }
 
-h2 { font-size: 1.6em; }
+h2 { font-size: 1.4em; }
 
 h3 { font-size: 1.45em; }
 
@@ -1656,7 +1656,7 @@ code, kbd, pre { font-family: 'Source Code Pro', 'Courier New', monospace; }
 
 .dead24 { fill: #A23635; }
 
-.dead25 { fill: none; stroke: #3E7EC1; stroke-width: 6; stroke-linecap: round; stroke-linejoin: round; }
+.dead25 { fill: none; stroke: #3E7EC1; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
 
 .loupe0 { fill: #F3CB8C; }
 
@@ -1728,8 +1728,6 @@ code, kbd, pre { font-family: 'Source Code Pro', 'Courier New', monospace; }
 
 .loupe34 { -webkit-clip-path: url(#SVGID_8_); clip-path: url(#SVGID_8_); fill: #878D8E; }
 
-.loupe35 { font-size: 12px; }
-
 * { box-sizing: border-box; }
 
 body { text-align: center; color: #0F2B48; }
@@ -1737,6 +1735,8 @@ body { text-align: center; color: #0F2B48; }
 @media screen and (max-width: 900px) { body { font-size: 20px; } }
 
 .hidden { display: none; }
+
+ul { margin-top: 0px; }
 
 .text { max-width: 900px; margin: 0 auto; }
 
@@ -1773,6 +1773,24 @@ body { text-align: center; color: #0F2B48; }
 .flex { display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-flex-wrap: nowrap; -ms-flex-wrap: nowrap; flex-wrap: nowrap; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; -webkit-align-items: flex-start; -ms-flex-align: start; align-items: flex-start; max-width: 80%; margin: 0 auto; }
 
 @media screen and (max-width: 1500px) { .flex { -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; } }
+
+.flex img { width: 200px; }
+
+.flex .img { padding-right: 30px; }
+
+@media screen and (min-width: 1501px) { .flex .svg_holder { padding-right: 30px; } }
+
+.flex .list { width: calc(100% - 230px); }
+
+#sources, #solution { text-align: left; }
+
+#sources h2, #solution h2 { text-align: center; }
+
+#fish_dead { max-width: 800px; width: 80%; }
+
+.particle-info { width: 80%; }
+
+.max-width { max-width: 80%; margin: 0 auto; }
 
 @-webkit-keyframes waves { 0% { -webkit-transform: translateX(-20px); transform: translateX(-20px); }
   50% { -webkit-transform: translateX(20px); transform: translateX(20px); }

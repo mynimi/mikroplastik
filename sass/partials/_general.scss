@@ -13,6 +13,9 @@ body{
     display: none;
 }
 
+ul{
+    margin-top: 0px;
+}
 .text{
     max-width: 900px;
     margin: 0 auto;
@@ -23,7 +26,7 @@ body{
 
     .title{
         @media screen and (min-width: 550px) {
-            font-size: 2.8em;            
+            font-size: 2.8em;
         }
     }
 }
@@ -111,4 +114,39 @@ body{
     @media screen and (max-width: 1500px) {
         flex-wrap: wrap;
     }
+    img{
+        width: 200px;
+    }
+    .img{
+        padding-right: 30px;
+    }
+    .svg_holder{
+        @media screen and (min-width: 1501px){
+            padding-right: 30px;
+        }
+    }
+    .list{
+            width: calc(100% - 230px);
+    }
+}
+
+#sources,
+#solution{
+    text-align: left;
+
+    h2{
+        text-align: center;
+    }
+}
+
+#fish_dead{
+    max-width: 800px;
+    width: 80%;
+}
+.particle-info{
+    width: 80%;
+}
+.max-width{
+    max-width: 80%;
+    margin: 0 auto;
 }
