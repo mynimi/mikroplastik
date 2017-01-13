@@ -60,6 +60,7 @@ body{
     position: fixed;
     z-index: 100;
     background: rgba(white, .9);
+    overflow: auto;
 
     &.open{
         display: block;

@@ -17,8 +17,7 @@
             <h1 class="title">Mikroplastik</h1>
             <div class="toggle-box text">
                 <p class="toggles">Was ist Mikroplastik? <i class="fa fa-plus"></i></p>
-                <p class="is-toggled hidden">Unter Mikroplastik versteht man Plastikteile, die kleiner als 5mm sind. Durch Wasser- und Luftwege gelangen sie in die Umwelt, wo sie auf den ersten Blick nur schwer zu erkennen sind, aber grossen Schaden anrichten können. Die Konzentration
-                    von Mikroplastik in den Weltmeeren wächst stetig.</p>
+                <p class="is-toggled hidden">Mikroplastik sind Plastikteile, die kleiner sind als 5mm. Durch ihre geringe Grösse verbreiten sich solche Partikel durch Wasser- sowie Luftwege und sammeln sich in der Umwelt an. Von blossem Auge sind sie nicht zu erkenne, richten aber grossen Schaden an.</p>
             </div>
         </div>
         <div class="water-scrollable">
@@ -746,7 +745,7 @@
                 </g>
                 <g id="Footer">
                     <rect x="1787.6" y="5733.5" class="st1" width="188.7" height="47.5"/>
-                    <text transform="matrix(1 0 0 1 1787.6349 5762.6611)" class="st2 st3 st49">Quellen</text>
+                    <text transform="matrix(1 0 0 1 1787.6349 5762.6611)" class="st2 st3 st49 toggler" data-toggles-overlay="sources" >Quellen</text>
                     <text transform="matrix(1 0 0 1 50.3 5757.231)" class="st2 st50 st49">© Myriam Frisano &amp; Maja Gobeli · 2017</text>
                 </g>
                 <g id="Fazit">
@@ -805,12 +804,12 @@
     </div>
     <div id="primary" class="toggle-box overlay">
         <h2>Primäres Mikroplastik</h2>
-        <p>Bla bla bla</p>
+        <p>Es wird zwischen primärem und sekundärem Mikroplastik unterschieden. Als primärer Mikroplastik werden jene Partikel bezeichnet, die für ihre Anwendung bereits in mikroskopischer Grösse hergestellt werden.</p>
         <span class="close"><i class="fa fa-times"></i></span>
     </div>
     <div id="secondary" class="toggle-box overlay">
         <h2>Sekundäres Mikroplastik</h2>
-        <p>Bla Bla Bla</p>
+        <p>Plastik, das erst durch mechanische Zersetzung (Abrieb, Zersplitterung etc.) zu Partikeln mikroskopischer Grösse wird, nennt man sekundäres Mikroplastik. Sekundäres Mikroplastik ist die grössere Quelle für Mikroplastikpartikel im Meer.</p>
         <span class="close"><i class="fa fa-times"></i></span>
     </div>
     <div id="fish-overlay" class="overlay">
@@ -1436,9 +1435,46 @@
             </div>
         </div>
     </div>
-    <div class="sources"></div>
-    <div class="copyright"></div>
-    <div class="close hidden"><i class="fa fa-lg fa-times"></i></div>
+    <div id="solution" class="toggle-box overlay">
+        <h2>Bewusster Konsum zur Reduktion von Mikroplastikemissionen</h2>
+        <ul>
+            <li>Kleidungssstücke aus natürlichen Fasern bevorzugen
+                <ul>
+                    <li>Leinen</li>
+                    <li>Hanf</li>
+                    <li>Baumwolle</li>
+                    <li>Wolle</li>
+                    <li>Seide</li>
+                </ul>
+            </li>
+            <li>Natürliche Alternativen für kosmetisches Peeling
+                <ul>
+                    <li>Rohrohrzucker</li>
+                    <li>Haferkleie</li>
+                    <li>Mandelpulver</li>
+                </ul>
+            </li>
+        </ul>
+        <span class="close"><i class="fa fa-times"></i></span>
+    </div>
+    <div id="sources" class="toggle-box overlay">
+        <h2>Quellen</h2>
+        <ul>
+            <li><a href="http://www.bafu.admin.ch/dokumentation/medieninformation/00962/?lang=de&msg-id=55628">BAFU Schweiz</a></li>
+            <li><a href="https://www.newsd.admin.ch/newsd/message/attachments/37656.pdf">Rapport Studie Lausanne</a></li>
+            <li><a href="https://www.umweltbundesamt.de/sites/default/files/medien/378/publikationen/texte_63_2015_quellen_fuer_mikroplastik_mit_relevanz_fuer_den_meeresschutz_1.pdf">Umwelt Bundesamt Studie</a></li>
+            <li><a href="https://www.umweltbundesamt.de/presse/presseinformationen/mikroplastik-im-meer-wie-viel-woher">Umwelt Bundesamt</a></li>
+            <li><a href="http://corporate.codecheck.info/wp-content/uploads/2016/10/Codecheck_Mikroplastikstudie_2016.pdf">Codecheck Mikroplastik-Studie 2016 (Zusammenarbeit mit BUND)</a></li>
+            <li><a href="http://microplastics.science/interactive-map/">Microplastic.science</a></li>
+            <li><a href="http://www.oekotoxzentrum.ch/media/2243/2015_mikroplastik_de.pdf">Schweizerisches Zentrum für angewandte Ökotoxikologie</a></li>
+            <li><a href="https://www.bund.net/themen/meere/mikroplastik/bund-muellkampagne/">Bund Umwelt und Naturschutz Deutschland (BUND)</a></li>
+            <li><a href="https://www.bund.net/fileadmin/user_upload_bund/publikationen/meere/meere_mikroplastik_einkaufsfuehrer.pdf">Bund Umwelt und Naturschutz Deutschland (BUND)</a></li>
+            <li><a href="https://www.bund.net/themen/meere/mikroplastik/hintergrund/">Bund Umwelt und Naturschutz Deutschland (BUND)</a></li>
+            <li><a href="https://www.bund.net/themen/meere/mikroplastik/">Bund Umwelt und Naturschutz Deutschland (BUND)</a></li>
+        </ul>
+        <span class="close"><i class="fa fa-times"></i></span>
+    </div>
+
     <!-- development (do not ship this)-->
     <script src="js/jquery-3.1.1.js"></script>
     <script src="js/main.js"></script>
