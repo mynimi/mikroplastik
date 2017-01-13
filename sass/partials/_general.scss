@@ -6,7 +6,7 @@ body{
     text-align: center;
     color: $main-color;
     @media screen and (max-width: 900px) {
-        font-size: 20px;
+        font-size: 19px;
     }
 }
 .hidden{
@@ -37,8 +37,8 @@ ul{
 
 .close{
     position: fixed;
-    top: 20px;
-    right: 20px;
+    top: 30px;
+    right: 30px;
     z-index: 9999;
 }
 
@@ -67,7 +67,7 @@ ul{
     transform: translate(-50%, -50%);
     position: fixed;
     z-index: 100;
-    background: rgba(white, .9);
+    background: rgba(white, .95);
     overflow: auto;
 
     &.open{
@@ -82,7 +82,7 @@ ul{
     }
 }
 
-#fish-overlay,
+/*#fish-overlay,
 #loupe-overlay{
     width: 100%;
     height: 100%;
@@ -95,7 +95,7 @@ ul{
     svg{
         margin: 30px 0;
     }
-}
+}*/
 
 #fisch_mp{
     max-width: 1000px;
@@ -110,7 +110,7 @@ ul{
     @include flexbox(row, nowrap, space-between, flex-start);
     max-width: 80%;
     margin: 0 auto;
-    @media screen and (max-width: 1500px) {
+    @media screen and (max-width: 1600px) {
         flex-wrap: wrap;
     }
     img{
@@ -126,11 +126,12 @@ ul{
 .flex-loupe{
     div{
         width: 100%;
-        @media screen and (min-width: 1501px) {
+        @media screen and (min-width: 1601px) {
             width: 50%;
         }
     }
     .svg_holder{
+        padding-top: 30px;
         padding-right: 30px;
     }
 }
@@ -144,13 +145,13 @@ ul{
 }
 
 #fish_dead{
-    max-width: 800px;
+    max-width: 600px;
     width: 80%;
 }
 .particle-info{
     width: 80%;
 }
 .max-width{
-    max-width: 80%;
+    // max-width: 80%;
     margin: 0 auto;
 }
