@@ -125,6 +125,7 @@ ul{
 }
 .flex-loupe{
     div{
+        width: 100%;
         @media screen and (min-width: 1501px) {
             width: 50%;
         }

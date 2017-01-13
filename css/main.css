@@ -1780,6 +1780,8 @@ ul { margin-top: 0px; }
 
 .flex .list { width: calc(100% - 230px); }
 
+.flex-loupe div { width: 100%; }
+
 @media screen and (min-width: 1501px) { .flex-loupe div { width: 50%; } }
 
 .flex-loupe .svg_holder { padding-right: 30px; }
