@@ -97,8 +97,7 @@ ul{
     }
 }
 
-#fisch_mp,
-#fish_loupe{
+#fisch_mp{
     max-width: 1000px;
 }
 
@@ -120,16 +119,20 @@ ul{
     .img{
         padding-right: 30px;
     }
-    .svg_holder{
-        @media screen and (min-width: 1501px){
-            padding-right: 30px;
-        }
-    }
     .list{
             width: calc(100% - 230px);
     }
 }
-
+.flex-loupe{
+    div{
+        @media screen and (min-width: 1501px) {
+            width: 50%;
+        }
+    }
+    .svg_holder{
+        padding-right: 30px;
+    }
+}
 #sources,
 #solution{
     text-align: left;

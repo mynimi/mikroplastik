@@ -1766,7 +1766,7 @@ ul { margin-top: 0px; }
 
 #fish-overlay svg, #loupe-overlay svg { margin: 30px 0; }
 
-#fisch_mp, #fish_loupe { max-width: 1000px; }
+#fisch_mp { max-width: 1000px; }
 
 .legend { font-size: .7em; text-align: left; }
 
@@ -1778,9 +1778,11 @@ ul { margin-top: 0px; }
 
 .flex .img { padding-right: 30px; }
 
-@media screen and (min-width: 1501px) { .flex .svg_holder { padding-right: 30px; } }
-
 .flex .list { width: calc(100% - 230px); }
+
+@media screen and (min-width: 1501px) { .flex-loupe div { width: 50%; } }
+
+.flex-loupe .svg_holder { padding-right: 30px; }
 
 #sources, #solution { text-align: left; }
 
